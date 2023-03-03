@@ -1,14 +1,11 @@
 import React from 'react';
-import { useTheme } from 'styled-components';
+import GlobalStyle from './globalStyle';
 
 export default function App() {
-  const theme = useTheme();
   return (
-    <div
-      style={{
-        color: theme.palette.colors.main
-      }}>
-      Hello world!
-    </div>
+    <>
+      <GlobalStyle />
+      <div>Hello world!</div>
+    </>
   );
 }
