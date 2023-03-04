@@ -3,7 +3,7 @@ import theme from '../../theme';
 
 export const SubHeading = styled('h3')({
   fontFamily: 'Cookie',
-  paddingTop: '3em',
+  paddingTop: '8em',
   color: 'white',
   fontSize: theme.font.extraLarge,
   fontWeight: '400'

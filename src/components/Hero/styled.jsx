@@ -2,16 +2,14 @@ import styled from 'styled-components';
 import theme from '../../theme';
 
 export const HeroContent = styled('div')({
-  backgroundImage: `url('/images/920.png')`,
+  backgroundImage: `url('/images/hero.png')`,
   backgroundSize: 'cover',
   position: 'relative',
   top: '-200px',
-  zIndex: '-1',
-  height: '950px',
+  zIndex: '1',
   display: 'flex',
   flexDirection: 'column',
   paddingLeft: '400px',
-  justifyContent: 'center',
   alignContent: 'center'
 });
 
@@ -21,22 +19,27 @@ export const HeroAction = styled('div')({
   position: 'relative',
   justifyContent: 'space-between',
   alignContent: 'center',
-  margin: '0px',
-  paddingTop: '50px'
+  bottom: '10px',
+  paddingBottom: '2em',
+  marginTop: '13em',
+  '&:after': {
+    content: ' ',
+    position: 'absolute',
+    bottom: '-20px',
+    width: '20px',
+    height: '20px',
+    backgroundColor: 'firebrick'
+  }
 });
 
 export const SocialHero = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  '&::before': {
+  '&:after': {
     content: '',
     position: 'absolute',
-    width: '5px',
+    width: '2px',
     height: '50px',
-    top: '1em',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    backgroundColor: 'firebrick'
+    bottom: '-50px',
+    backgroundColor: 'white'
   }
 });
 
@@ -47,19 +50,34 @@ export const Slider = styled('div')({
 export const SliderButtons = styled('p')({
   border: '1px solid white',
   borderRadius: '3em',
-  padding: '.2em .5em',
-  marginInline: '1em',
-  color: 'white'
+  padding: '.2em .6em',
+  margin: '1em 1em',
+  color: 'white',
+  fontFamily: 'Prata',
+  fontSize: theme.font.normal,
+  '&:hover': {
+    backgroundColor: 'rgb(242, 242, 242,0.3)'
+  }
 });
 
 export const Slides = styled('p')(({ empty }) => ({
-  borderTop: '1px solid white',
-  marginTop: '1em',
+  borderTop: '2px solid white',
+  marginTop: '1.8em',
   color: 'white',
-  paddingInline: '1em',
-  fontSize: theme.font.medium,
+  paddingInline: '1.5em',
+  paddingTop: '.5em',
+  fontFamily: 'Prata',
+  fontSize: theme.font.normal,
+  '&:hover': {
+    color: theme.palette.colors.primary,
+    borderTop: `2px solid ${theme.palette.colors.primary}`
+  },
   ...(empty && {
-    width: '2em',
-    borderTop: `1px solid ${theme.palette.colors.secondary}`
+    width: '3em',
+    borderTop: `2px solid ${theme.palette.colors.secondary}`,
+    '&:hover': {
+      color: 'white',
+      borderTop: `2px solid ${theme.palette.colors.secondary}`
+    }
   })
 }));

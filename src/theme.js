@@ -2,7 +2,10 @@ export default {
   palette: {
     colors: {
       primary: '#803E38',
-      secondary: '#D1C1A5'
+      primaryLight: '#D1C1A5',
+      secondary: '#D1C1A5',
+      buttonLight: '#D1C1A5',
+      buttonDark: '#483224'
     },
     background: {
       primary: '#803E38',
