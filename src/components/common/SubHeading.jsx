@@ -1,18 +1,29 @@
 import styled from 'styled-components';
-import theme from '../../theme';
 
-export const SubHeading = styled('h3')({
+export const TitleHeading = styled('h3')(({ theme }) => ({
   fontFamily: 'Cookie',
   paddingTop: '8em',
   color: 'white',
   fontSize: theme.font.extraLarge,
   fontWeight: '400'
-});
+}));
 
-export const Heading = styled('h1')({
+export const Heading = styled('h1')(({ theme }) => ({
   fontFamily: 'Prata',
   color: 'white',
   fontSize: theme.font.xxl,
   fontWeight: '400',
   width: '15ch'
-});
+}));
+
+export const SubHeading = styled('div')(({ theme }) => ({
+  fontFamily: 'Prata',
+  fontSize: theme.font.large,
+  color: 'white'
+}));
+
+export const Paragraph = styled('div')(({ theme }) => ({
+  paddingBlock: '1em',
+  fontFamily: 'Prata',
+  color: theme.palette.colors.primary
+}));

@@ -18,5 +18,10 @@ export default {
     large: '30px',
     extraLarge: '50px',
     xxl: '70px'
+  },
+  fontFamily: {
+    title: 'Cookie',
+    heading: 'Prata',
+    text: 'Barlow'
   }
 };

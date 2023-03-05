@@ -8,7 +8,7 @@ export const FlowerContainer = styled('div')({
   },
   '>:nth-child(2)': {
     position: 'absolute',
-    bottom: '50px',
+    bottom: '150px',
     left: '10%'
   },
   '>:nth-child(3)': {
@@ -18,14 +18,14 @@ export const FlowerContainer = styled('div')({
   },
   '>:nth-child(4)': {
     position: 'absolute',
-    top: '350px',
-    zIndex: '-1',
+    bottom: '150px',
+    // zIndex: '-1',
     width: '350px',
     right: '55%'
   },
   '>:nth-child(5)': {
     position: 'absolute',
-    top: '250px',
+    top: '150px',
     left: '20%'
   },
   '>:nth-child(6)': {

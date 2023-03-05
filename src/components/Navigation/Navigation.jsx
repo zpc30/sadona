@@ -1,37 +1,39 @@
 import React from 'react';
-import { DropAction, DropDown, Menu, NavContainer } from './styled';
+import { Menu, NavContainer } from './styled';
+import { MenuLinkLi } from './styled';
+import DropMenu, { DropMenuItem } from './DropMenu';
 
 export default function Navigation() {
   return (
     <NavContainer>
       <Menu>
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>Our Story</a>
-        </li>
-        <DropAction>
-          <a>Services ▼</a>
-          <DropDown>
-            <li>Salon Services</li>
-            <li>Spa Services</li>
-            <li>Bridal Services</li>
-          </DropDown>
-        </DropAction>
-        <li>
-          <img src="./icons/logo.png" />
-        </li>
-        <li>
-          <a>Products</a>
-        </li>
-        <li>
-          <a>News</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
+        <MenuLink text={'Home'} link={'/'} />
+        <MenuLink text={'Our Story'} link={'#story'} />
+        <DropMenu text={'Services'}>
+          <DropMenuItem text={'Salon Services'} link={''} />
+          <DropMenuItem text={'Spa Services'} link={''} />
+          <DropMenuItem text={'Bridal Services'} link={''} last />
+        </DropMenu>
+        <LogoLink src={'/icons/logo.png'} />
+        <MenuLink text={'Products'} link={'#products'} />
+        <MenuLink text={'News'} link={'#news'} />
+        <MenuLink text={'Contact'} link={'#contact'} />
       </Menu>
     </NavContainer>
   );
 }
+const MenuLink = ({ text, link }) => {
+  return (
+    <MenuLinkLi>
+      <a href={link}>{text}</a>
+    </MenuLinkLi>
+  );
+};
+
+const LogoLink = ({ src }) => {
+  return (
+    <li>
+      <img src={src} />
+    </li>
+  );
+};
