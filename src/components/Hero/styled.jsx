@@ -4,32 +4,31 @@ import theme from '../../theme';
 export const HeroContent = styled('div')({
   backgroundImage: `url('/images/hero.png')`,
   backgroundSize: 'cover',
-  position: 'relative',
-  top: '-200px',
+  // position: 'relative',
+  marginTop: '-200px',
   zIndex: '1',
   display: 'flex',
   flexDirection: 'column',
-  paddingLeft: '400px',
-  alignContent: 'center'
+  alignItems: 'center'
+});
+
+export const Headings = styled('div')({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignContent: 'center',
+  margin: '0 auto',
+  paddingRight: '15em'
 });
 
 export const HeroAction = styled('div')({
   display: 'flex',
-  width: '800px',
+  gap: '5em',
   position: 'relative',
   justifyContent: 'space-between',
-  alignContent: 'center',
   bottom: '10px',
   paddingBottom: '2em',
-  marginTop: '13em',
-  '&:after': {
-    content: ' ',
-    position: 'absolute',
-    bottom: '-20px',
-    width: '20px',
-    height: '20px',
-    backgroundColor: 'firebrick'
-  }
+  marginTop: '13em'
 });
 
 export const SocialHero = styled('div')({
@@ -55,7 +54,8 @@ export const SocialHero = styled('div')({
 });
 
 export const Slider = styled('div')({
-  display: 'flex'
+  display: 'flex',
+  paddingLeft: '10em'
 });
 
 export const SliderButtons = styled('p')({
@@ -75,7 +75,7 @@ export const Slides = styled('p')(({ empty }) => ({
   borderTop: '2px solid white',
   marginTop: '1.8em',
   color: 'white',
-  paddingInline: '1.5em',
+  paddingInline: '2em',
   paddingTop: '.5em',
   fontFamily: 'Prata',
   fontSize: theme.font.normal,
