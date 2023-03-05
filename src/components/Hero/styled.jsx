@@ -33,12 +33,23 @@ export const HeroAction = styled('div')({
 });
 
 export const SocialHero = styled('div')({
-  '&:after': {
-    content: '',
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignContent: 'center',
+  '>:nth-child(3)': {
+    width: '13px',
+    textAlign: 'center',
+    margin: '0 auto .5em'
+  },
+  div: {
     position: 'absolute',
     width: '2px',
     height: '50px',
     bottom: '-50px',
+    left: '50%',
+    transform: 'translateX(-50%)',
     backgroundColor: 'white'
   }
 });
@@ -51,7 +62,7 @@ export const SliderButtons = styled('p')({
   border: '1px solid white',
   borderRadius: '3em',
   padding: '.2em .6em',
-  margin: '1em 1em',
+  margin: 'auto 1em',
   color: 'white',
   fontFamily: 'Prata',
   fontSize: theme.font.normal,

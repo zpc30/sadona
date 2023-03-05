@@ -19,6 +19,7 @@ export default function Hero() {
           <img width="15px" src="./icons/facebook.svg" alt="" />
           <br />
           <img width="15px" src="./icons/instagram.svg" alt="" />
+          <div></div>
         </SocialHero>
         <HeroSlider />
       </HeroAction>

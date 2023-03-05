@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, NavContainer } from './styled';
+import { DropAction, DropDown, Menu, NavContainer } from './styled';
 
 export default function Navigation() {
   return (
@@ -11,12 +11,17 @@ export default function Navigation() {
         <li>
           <a>Our Story</a>
         </li>
+        <DropAction>
+          <a>Services ▼</a>
+          <DropDown>
+            <li>Salon Services</li>
+            <li>Spa Services</li>
+            <li>Bridal Services</li>
+          </DropDown>
+        </DropAction>
         <li>
-          <a>Services</a>
+          <img src="./icons/logo.png" />
         </li>
-      </Menu>
-      <img src="./icons/logo.png" />
-      <Menu>
         <li>
           <a>Products</a>
         </li>
