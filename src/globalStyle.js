@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle(({ theme }) => ({
+export default createGlobalStyle(() => ({
   '*': {
-    color: theme.palette.colors.main
+    margin: '0',
+    padding: '0',
+    boxSizing: 'border-box'
   }
 }));
