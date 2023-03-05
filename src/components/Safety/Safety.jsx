@@ -1,11 +1,11 @@
 import React from 'react';
 import { SubHeading, Paragraph } from '../common/SubHeading';
 import { Button, ButtonContainer } from '../common/Button';
-import { SectionContainer } from './styled';
+import { Section } from '../common/Section';
 
 export default function Safety() {
   return (
-    <SectionContainer textPosition={'center'} color={'primary'}>
+    <Section textPosition={'center'} color={'primary'}>
       <SubHeading
         style={{
           width: 'fit-content'
@@ -16,6 +16,6 @@ export default function Safety() {
       <ButtonContainer>
         <Button>Safety Guidilines</Button>
       </ButtonContainer>
-    </SectionContainer>
+    </Section>
   );
 }

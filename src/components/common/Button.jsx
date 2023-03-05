@@ -21,3 +21,8 @@ export const Button = styled('button')(({ light }) => ({
 
   // })
 }));
+
+export const Anchor = styled('a')(() => ({
+  display: 'block',
+  margin: '0em auto'
+}));
