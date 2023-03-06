@@ -10,7 +10,7 @@ export const Section = styled('div')(({ border, theme, textPosition }) => ({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  paddingBlock: '2em',
+  paddingBlock: '5em',
   backgroundColor: theme.palette.colors.secondary,
   ...(border && {
     '&:after': {

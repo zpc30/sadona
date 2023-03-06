@@ -16,7 +16,7 @@ export default function BridalServices() {
         width: '1100px',
         height: '500px',
         margin: '5em auto',
-        borderRadius: '0 5em 0 5em'
+        borderRadius: '0 10em 0 10em'
       }}>
       <Headings
         style={{
@@ -24,7 +24,7 @@ export default function BridalServices() {
           right: '0px',
           paddingBlock: '10em',
           paddingInline: '1em',
-          width: '350px',
+          width: '400px',
           backgroundColor: 'rgb(255,255,255,0.3)'
         }}>
         <TitleHeading
@@ -40,6 +40,7 @@ export default function BridalServices() {
         </TitleHeading>
         <SubHeading
           style={{
+            fontSize: theme.font.extraLarge,
             color: theme.palette.colors.primary
           }}>
           Bridal Services
