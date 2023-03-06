@@ -9,6 +9,7 @@ import SpaServices from './components/SpaServices/';
 import BridalServices from './components/BridalServices/';
 import AboutSadona from './components/AboutSadona/AboutSadona';
 import SaltServices from './components/SaltServices/SaltServices';
+import Cezanne from './components/Cezanne';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <BridalServices />
       <SaltServices />
       <AboutSadona />
+      <Cezanne />
     </>
   );
 }
