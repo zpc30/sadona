@@ -1,8 +1,8 @@
 import React from 'react';
-import { Headings, HeroAction, HeroContent, SocialHero } from './styled';
+import { HeroAction, HeroContent, SocialHero } from './styled';
 import { ButtonContainer, Button } from '../common/Button';
 import HeroSlider from './HeroSlider';
-import { Heading, TitleHeading } from '../common/SubHeading';
+import { Headings, Heading, TitleHeading } from '../common/SubHeading';
 import Flowers from '../Flowers';
 
 export default function Hero() {

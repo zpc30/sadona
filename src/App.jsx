@@ -6,6 +6,7 @@ import GlobalStyle from './globalStyle';
 import OurStory from './components/OurStory/OutStory';
 import SalonServices from './components/SalonServices/SalonServices';
 import SpaServices from './components/SpaServices/SpaServices';
+import BridalServices from './components/BridalServices/BridalServices';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <OurStory />
       <SalonServices />
       <SpaServices />
+      <BridalServices />
     </>
   );
 }
