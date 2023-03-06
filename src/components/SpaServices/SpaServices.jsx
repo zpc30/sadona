@@ -23,7 +23,6 @@ export default function SpaServices() {
           borderRadius: '0 5em 0 0',
           alignItems: 'flex-start',
           width: '30vw',
-          //   height: '500px',
           margin: '0 auto',
 
           backgroundColor: theme.palette.colors.primary

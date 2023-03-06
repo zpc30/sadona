@@ -12,6 +12,8 @@ export const Headings = styled('div')({
 export const TitleHeading = styled('h3')(({ theme }) => ({
   fontFamily: 'Cookie',
   paddingTop: '8em',
+  display: 'flex',
+  gap: '.5em',
   color: 'white',
   fontSize: theme.font.extraLarge,
   fontWeight: '400'
@@ -28,7 +30,8 @@ export const Heading = styled('h1')(({ theme }) => ({
 export const SubHeading = styled('div')(({ theme }) => ({
   fontFamily: 'Prata',
   fontSize: theme.font.large,
-  color: 'white'
+  color: 'white',
+  margin: '.5em 0'
 }));
 
 export const Paragraph = styled('div')(({ theme }) => ({
