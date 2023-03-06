@@ -12,15 +12,6 @@ export const HeroContent = styled('div')({
   alignItems: 'center'
 });
 
-export const Headings = styled('div')({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignContent: 'center',
-  margin: '0 auto',
-  paddingRight: '15em'
-});
-
 export const HeroAction = styled('div')({
   display: 'flex',
   gap: '5em',
