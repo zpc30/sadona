@@ -3,6 +3,8 @@ import Safety from './components/Safety';
 import Hero from './components/Hero/Hero';
 import Navigation from './components/Navigation';
 import GlobalStyle from './globalStyle';
+import OurStory from './components/OurStory/OutStory';
+import SalonServices from './components/SalonServices/SalonServices';
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
       <Navigation />
       <Hero />
       <Safety />
+      <OurStory />
+      <SalonServices />
     </>
   );
 }

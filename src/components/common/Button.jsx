@@ -21,3 +21,11 @@ export const Button = styled('button')(({ light }) => ({
 
   // })
 }));
+
+export const Anchor = styled('a')(({ theme }) => ({
+  display: 'block',
+  margin: '0em auto',
+  fontFamily: theme.fontFamily.text,
+  fontSize: theme.font.small,
+  color: theme.palette.colors.primary
+}));
