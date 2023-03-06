@@ -3,13 +3,15 @@ import { Section, SectionContainer } from '../common/Section';
 import { SubHeading, Paragraph } from '../common/SubHeading';
 import { Button, ButtonContainer } from '../common/Button';
 import { useTheme } from 'styled-components';
+import Flowers from '../Flowers';
 
 export default function OurStory() {
   const theme = useTheme();
 
   return (
     <SectionContainer>
-      <Section border style={{ paddingBlock: '5em', backgroundColor: 'white' }}>
+      <Section border style={{ paddingBlock: '5em', backgroundColor: 'transparent' }}>
+        <Flowers />
         <SubHeading
           style={{
             paddingTop: '0',

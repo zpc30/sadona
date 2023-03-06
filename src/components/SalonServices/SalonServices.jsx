@@ -4,7 +4,7 @@ import { Section } from '../common/Section';
 import { Paragraph, SubHeading, TitleHeading } from '../common/SubHeading';
 import { Anchor, Button, ButtonContainer } from '../common/Button';
 import { SmallImageContainer, ImageContainer } from './styled';
-
+import Flowers from '../Flowers';
 export default function SalonServices() {
   const theme = useTheme();
   return (
@@ -16,6 +16,7 @@ export default function SalonServices() {
         width: '1100px',
         margin: '0 auto'
       }}>
+      <Flowers />
       <ImageContainer>
         <img src={'/images/salonServices.png'} />
       </ImageContainer>
@@ -43,7 +44,7 @@ export default function SalonServices() {
       <ButtonContainer>
         <Button>All Services</Button>
       </ButtonContainer>
-      <Anchor style={{ paddingTop: '3em' }}>CheckoutMore</Anchor>
+      <Anchor style={{ paddingTop: '3em' }}>↓ Check out more</Anchor>
     </Section>
   );
 }

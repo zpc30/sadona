@@ -8,8 +8,8 @@ import Flowers from '../Flowers';
 export default function Hero() {
   return (
     <HeroContent>
-      <Flowers />
       <Headings>
+        <Flowers />
         <TitleHeading>A new type of salon.</TitleHeading>
         <Heading>A New Type Of Experience.</Heading>
         <ButtonContainer>

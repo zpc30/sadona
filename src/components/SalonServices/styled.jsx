@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ImageContainer = styled('div')(() => ({
   position: 'absolute',
   height: '400px',
+  zIndex: '-1',
   width: '1100px',
   overflow: 'hidden',
   img: {
