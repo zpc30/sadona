@@ -12,8 +12,9 @@ export default {
     }
   },
   font: {
-    small: '12px',
-    normal: '16px',
+    xSmall: '12px',
+    small: '16px',
+    normal: '20px',
     medium: '25px',
     large: '30px',
     extraLarge: '50px',
