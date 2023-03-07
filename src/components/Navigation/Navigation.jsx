@@ -32,7 +32,7 @@ const MenuLink = ({ text, link }) => {
 
 const LogoLink = ({ src }) => {
   return (
-    <li>
+    <li style={{ paddingBlock: '.5em' }}>
       <img src={src} />
     </li>
   );

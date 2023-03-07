@@ -4,9 +4,7 @@ import theme from '../../theme';
 export const HeroContent = styled('div')({
   backgroundImage: `url('/images/hero.png')`,
   backgroundSize: 'cover',
-  // position: 'relative',
   marginTop: '-200px',
-  zIndex: '1',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
@@ -37,7 +35,7 @@ export const SocialHero = styled('div')({
     position: 'absolute',
     width: '2px',
     height: '50px',
-    bottom: '-50px',
+    bottom: '-43px',
     left: '50%',
     transform: 'translateX(-50%)',
     backgroundColor: 'white'

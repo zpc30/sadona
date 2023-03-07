@@ -17,7 +17,7 @@ export default function SaltServices() {
         style={{
           position: 'relative',
           alignItems: 'flex-start',
-          width: '30vw'
+          width: '27vw'
         }}>
         <TitleHeading style={{ fontSize: theme.font.medium, paddingTop: '0' }}>
           <img src="/icons/sugar.svg" />

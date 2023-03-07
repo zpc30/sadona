@@ -5,8 +5,9 @@ export const Headings = styled('div')({
   flexDirection: 'column',
   justifyContent: 'center',
   alignContent: 'center',
-  margin: '0 auto',
-  paddingRight: '15em'
+  width: '1100px',
+  margin: '0 auto'
+  // paddingRight: '15em'
 });
 
 export const TitleHeading = styled('h3')(({ theme }) => ({
