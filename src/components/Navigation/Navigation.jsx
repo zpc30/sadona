@@ -9,7 +9,7 @@ export default function Navigation() {
       <Menu>
         <MenuLink text={'Home'} link={'/'} />
         <MenuLink text={'Our Story'} link={'#story'} />
-        <DropMenu text={'Services'}>
+        <DropMenu text={'Services ▼'}>
           <DropMenuItem text={'Salon Services'} link={''} />
           <DropMenuItem text={'Spa Services'} link={''} />
           <DropMenuItem text={'Bridal Services'} link={''} last />

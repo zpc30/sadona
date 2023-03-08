@@ -62,6 +62,7 @@ export const DropMenuContainer = styled('li')(({ theme }) => ({
   cursor: 'pointer',
   position: 'relative',
   display: 'flex',
+  justifyContent: 'center',
   alignItems: 'center',
   paddingLeft: '1em',
   paddingBlock: '2.5em',
