@@ -38,5 +38,8 @@ export const SubHeading = styled('div')(({ theme }) => ({
 export const Paragraph = styled('div')(({ theme }) => ({
   paddingBlock: '1em',
   fontFamily: 'Prata',
-  color: theme.palette.colors.primary
+  color: theme.palette.colors.primary,
+  span: {
+    color: theme.palette.colors.primary
+  }
 }));

@@ -3,6 +3,7 @@ import { useTheme } from 'styled-components';
 import { Anchor, Button, ButtonContainer } from '../common/Button';
 import { Section, SectionContainer } from '../common/Section';
 import { Paragraph, SubHeading, TitleHeading } from '../common/SubHeading';
+import Flowers from '../Flowers';
 
 export default function SpaServices() {
   const theme = useTheme();
@@ -11,8 +12,10 @@ export default function SpaServices() {
       style={{
         overflow: 'hidden',
         position: 'relative',
-        backgroundColor: theme.palette.colors.primary
+        backgroundColor: theme.palette.colors.primary,
+        zIndex: '1'
       }}>
+      <Flowers />
       <Section
         style={{
           position: 'relative',
@@ -47,8 +50,8 @@ export default function SpaServices() {
           Both an escape and an oasis, the luxurious spa experiences at Sadona will leave you
           feeling soothed, energized and refreshed.
         </Paragraph>
-        <ButtonContainer>
-          <Button>All Services</Button>
+        <ButtonContainer light>
+          <Button light>All Services</Button>
         </ButtonContainer>
         <Anchor style={{ display: 'block', margin: '.5em', color: theme.palette.colors.secondary }}>
           ↓ Check out more

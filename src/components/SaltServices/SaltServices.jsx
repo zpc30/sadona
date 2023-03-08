@@ -11,6 +11,7 @@ export default function SaltServices() {
         display: 'flex',
         justifyContent: 'center',
         margin: '0 auto',
+        zIndex: '2',
         background: theme.palette.colors.secondary
       }}>
       <Section

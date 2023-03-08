@@ -5,7 +5,6 @@ export const FlowerContainer = styled('div')(() => ({
     position: 'absolute',
     top: '250px',
     left: '60%'
-    // zIndex: '-1'
   },
   '>:nth-child(2)': {
     position: 'absolute',

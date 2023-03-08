@@ -3,6 +3,7 @@ import { useTheme } from 'styled-components';
 import { ButtonContainer, Button } from '../common/Button';
 import { Section } from '../common/Section';
 import { SubHeading } from '../common/SubHeading';
+import Flowers from '../Flowers';
 
 export default function GiftCard() {
   const theme = useTheme();
@@ -14,6 +15,7 @@ export default function GiftCard() {
         gap: '15em',
         paddingBlock: '3em'
       }}>
+      <Flowers />
       <SubHeading style={{ color: theme.palette.colors.primary }}>
         Surprice your friends & family with our gift card!
       </SubHeading>

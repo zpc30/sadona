@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import theme from '../../theme';
 
-export const HeroContent = styled('div')({
+export const HeroContent = styled('div')(() => ({
   backgroundImage: `url('/images/hero.png')`,
   backgroundSize: 'cover',
   marginTop: '-200px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
-});
+}));
 
-export const HeroAction = styled('div')({
+export const HeroAction = styled('div')(() => ({
   display: 'flex',
   gap: '5em',
   position: 'relative',
@@ -18,9 +17,9 @@ export const HeroAction = styled('div')({
   bottom: '10px',
   paddingBottom: '2em',
   marginTop: '13em'
-});
+}));
 
-export const SocialHero = styled('div')({
+export const SocialHero = styled('div')(({ theme }) => ({
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
@@ -39,15 +38,20 @@ export const SocialHero = styled('div')({
     left: '50%',
     transform: 'translateX(-50%)',
     backgroundColor: 'white'
+  },
+  'svg:hover': {
+    path: {
+      fill: theme.palette.colors.primary
+    }
   }
-});
+}));
 
-export const Slider = styled('div')({
+export const Slider = styled('div')(() => ({
   display: 'flex',
   paddingLeft: '10em'
-});
+}));
 
-export const SliderButtons = styled('p')({
+export const SliderButtons = styled('p')(({ theme }) => ({
   border: '1px solid white',
   borderRadius: '3em',
   padding: '.2em .6em',
@@ -58,9 +62,9 @@ export const SliderButtons = styled('p')({
   '&:hover': {
     backgroundColor: 'rgb(242, 242, 242,0.3)'
   }
-});
+}));
 
-export const Slides = styled('p')(({ empty }) => ({
+export const Slides = styled('p')(({ empty, theme }) => ({
   borderTop: '2px solid white',
   marginTop: '1.8em',
   color: 'white',

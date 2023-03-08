@@ -15,14 +15,20 @@ export const FooterInfo = styled('div')(() => ({
   gap: '2em'
 }));
 
-export const FooterInfoBox = styled('div')(() => ({
+export const FooterInfoBox = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  //   width: '30%',
   li: {
     display: 'flex',
     gap: '1em',
-    width: '100%'
+    width: '100%',
+    marginBottom: '-1em',
+    marginLeft: '2em'
+  },
+  'svg:hover': {
+    path: {
+      fill: theme.palette.colors.secondary
+    }
   }
 }));
 

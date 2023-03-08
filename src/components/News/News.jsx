@@ -14,6 +14,7 @@ export default function News() {
           color: theme.palette.colors.primary,
           textAlign: 'center',
           paddingTop: '1em',
+          margin: '0 auto',
           fontSize: theme.font.extraLarge
         }}>
         News
