@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
-export const Headings = styled('div')({
+export const Headings = styled('div')(() => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignContent: 'center',
   width: '1100px',
-  margin: '0 auto'
-  // paddingRight: '15em'
-});
+  margin: '0 auto',
+  '@media (max-width: 1100px)': {
+    width: '100%',
+    paddingInline: '2em'
+  }
+}));
 
 export const TitleHeading = styled('h3')(({ theme }) => ({
   fontFamily: 'Cookie',
@@ -35,11 +38,16 @@ export const SubHeading = styled('div')(({ theme }) => ({
   margin: '.5em 0'
 }));
 
-export const Paragraph = styled('div')(({ theme }) => ({
+export const Paragraph = styled('p')(({ theme, product }) => ({
   paddingBlock: '1em',
   fontFamily: 'Prata',
   color: theme.palette.colors.primary,
   span: {
     color: theme.palette.colors.primary
+  },
+  '@media (max-width: 1100px)': {
+    ...(product && {
+      width: '250px !important'
+    })
   }
 }));

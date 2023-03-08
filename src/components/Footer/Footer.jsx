@@ -15,7 +15,7 @@ import { useTheme } from 'styled-components';
 export default function Footer() {
   const theme = useTheme();
   return (
-    <FooterContainer style={{ zIndex: '-25' }}>
+    <FooterContainer>
       <FooterInfo>
         <FooterInfoBox>
           <img width="150px" src="/icons/logoDark.png" />

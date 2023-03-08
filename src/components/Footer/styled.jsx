@@ -8,16 +8,23 @@ export const FooterContainer = styled('div')(() => ({
 
 export const FooterInfo = styled('div')(() => ({
   display: 'flex',
+  flexWrap: 'wrap',
   width: '1100px',
   margin: '0 auto',
   paddingBlock: '3em',
   borderBlock: '2px solid white',
-  gap: '2em'
+  gap: '1em',
+  '@media (max-width: 1100px)': {
+    width: '100%',
+    paddingInline: '2em',
+    justifyContent: 'center'
+  }
 }));
 
 export const FooterInfoBox = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
+  width: 'fit-content',
   li: {
     display: 'flex',
     gap: '1em',
@@ -29,24 +36,39 @@ export const FooterInfoBox = styled('div')(({ theme }) => ({
     path: {
       fill: theme.palette.colors.secondary
     }
+  },
+  '@media (max-width: 1100px)': {
+    width: '40%'
   }
 }));
 
 export const FooterMenu = styled('div')(() => ({
   display: 'flex',
+  flexWrap: 'wrap',
   width: '1100px',
   justifyContent: 'space-between',
-  margin: '0 auto 5em'
+  margin: '0 auto 5em',
+  '@media (max-width: 1100px)': {
+    width: '100%'
+  }
 }));
 
 export const FooterMenuBox = styled('div')(() => ({
   display: 'flex',
-  flexDirection: 'column'
+  width: 'fit-content',
+  flexDirection: 'column',
+  '@media (max-width: 1100px)': {
+    width: '100%',
+    paddingInline: '6em'
+  }
 }));
 
 export const FooterMenuItems = styled('div')(() => ({
   display: 'flex',
-  gap: '1em'
+  gap: '1em',
+  '@media (max-width: 1100px)': {
+    width: 'fit-content'
+  }
 }));
 
 export const CopyRight = styled('div')(({ theme }) => ({

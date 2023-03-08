@@ -6,7 +6,10 @@ export const HeroContent = styled('div')(() => ({
   marginTop: '-200px',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center'
+  alignItems: 'center',
+  '@media (max-width: 1100px)': {
+    backgroundPosition: 'right '
+  }
 }));
 
 export const HeroAction = styled('div')(() => ({
@@ -16,7 +19,11 @@ export const HeroAction = styled('div')(() => ({
   justifyContent: 'space-between',
   bottom: '10px',
   paddingBottom: '2em',
-  marginTop: '13em'
+  marginTop: '13em',
+  '@media (max-width: 1100px)': {
+    gap: '.1em',
+    width: '100%'
+  }
 }));
 
 export const SocialHero = styled('div')(({ theme }) => ({
@@ -48,7 +55,10 @@ export const SocialHero = styled('div')(({ theme }) => ({
 
 export const Slider = styled('div')(() => ({
   display: 'flex',
-  paddingLeft: '10em'
+  paddingLeft: '10em',
+  '@media (max-width: 1100px)': {
+    paddingLeft: '10%'
+  }
 }));
 
 export const SliderButtons = styled('p')(({ theme }) => ({

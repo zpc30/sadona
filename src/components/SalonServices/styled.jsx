@@ -16,6 +16,12 @@ export const ImageContainer = styled('div')(() => ({
     bottom: '-50px',
     width: '100%',
     height: '100%'
+  },
+  '@media (max-width: 1100px)': {
+    width: '90%',
+    img: {
+      right: '-25%'
+    }
   }
 }));
 
@@ -29,8 +35,27 @@ export const SmallImageContainer = styled('div')(() => ({
     objectPosition: 'center',
     position: 'absolute',
     right: '-700px',
-    bottom: '-170px',
+    bottom: '-300px',
     width: '100%',
     height: '100%'
+  },
+  '@media (max-width: 1100px)': {
+    width: '40%',
+    img: {
+      right: '-125%'
+    }
+  }
+}));
+
+export const SalonContainer = styled('div')(() => ({
+  display: 'flex',
+  background: 'transparent',
+  alignItems: 'flex-start',
+  width: '1100px',
+  margin: '0 auto',
+  '@media (max-width: 1100px)': {
+    width: '100%',
+    margin: '0',
+    paddingInline: '.3em'
   }
 }));

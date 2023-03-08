@@ -13,6 +13,9 @@ export const ButtonContainer = styled('div')(({ light, theme }) => ({
     border: light
       ? `1px solid ${theme.palette.colors.secondary}`
       : `1px solid ${theme.palette.colors.primary}`
+  },
+  '@media (max-width: 1100px)': {
+    marginRight: '1em'
   }
 }));
 
@@ -26,7 +29,7 @@ export const Button = styled('button')(({ light, theme }) => ({
   background: light ? theme.palette.colors.buttonLight : theme.palette.colors.buttonDark
 }));
 
-export const Anchor = styled('a')(({ menu, theme }) => ({
+export const Anchor = styled('a')(({ menu, theme, product }) => ({
   display: 'block',
   margin: '0em auto',
   fontFamily: theme.fontFamily.text,
@@ -38,5 +41,14 @@ export const Anchor = styled('a')(({ menu, theme }) => ({
       borderBottom: `2px solid #803E38`,
       margin: '-.5px'
     }
-  })
+  }),
+  '@media (max-width: 1100px)': {
+    ...(product && {
+      position: 'relative',
+      zIndex: '20',
+      left: '-200px',
+      cursor: 'pointer',
+      width: '0px'
+    })
+  }
 }));

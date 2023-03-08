@@ -10,17 +10,29 @@ export const NavContainer = styled('nav')(({ theme }) => ({
   boxShadow: '2px 4px 12px rgb(000,000,000,.4)',
   img: {
     width: '165px',
-    marginInline: '5em'
+    marginInline: '6.5em'
+  },
+  '@media (max-width: 1100px)': {
+    img: {
+      width: '145px',
+      marginInline: '5.5em'
+    }
   }
 }));
 
 export const Menu = styled('ul')({
   listStyle: 'none',
   display: 'flex',
-  gap: ' 2.5em',
-  width: '1100px',
+  gap: ' 3em',
+  width: '70%',
+  justifyContent: 'center',
   alignItems: 'center',
-  position: 'relative'
+  position: 'relative',
+
+  '@media (max-width: 1100px)': {
+    gap: '2em',
+    width: '100%'
+  }
 });
 
 export const MenuLinkLi = styled('li')(({ theme }) => ({
@@ -29,7 +41,7 @@ export const MenuLinkLi = styled('li')(({ theme }) => ({
   color: theme.palette.colors.primaryLight,
   a: {
     textAlign: 'center',
-    width: '90px',
+    width: '100%',
     padding: '2.5em 0em',
     transition: 'all 300ms ease 200ms',
     display: 'block',
@@ -47,6 +59,7 @@ export const DropMenuContainer = styled('li')(({ theme }) => ({
   fontFamily: 'Barlow',
   fontSize: '20px',
   color: theme.palette.colors.secondary,
+  cursor: 'pointer',
   position: 'relative',
   display: 'flex',
   alignItems: 'center',

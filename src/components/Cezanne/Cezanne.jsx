@@ -1,21 +1,14 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
-import { Section } from '../common/Section';
 import { Paragraph, SubHeading, TitleHeading } from '../common/SubHeading';
 import { Anchor } from '../common/Button';
-import { ProductsContainer } from './styled';
+import { ProductsContainer, ProductText } from './styled';
 
 export default function Cezanne() {
   const theme = useTheme();
   return (
     <ProductsContainer>
-      <Section
-        style={{
-          alignItems: 'flex-start',
-          width: '25vw',
-          backgroundColor: theme.palette.colors.primary,
-          margin: '.5em 3em'
-        }}>
+      <ProductText style={{}}>
         <TitleHeading
           style={{
             paddingTop: '0',
@@ -25,12 +18,13 @@ export default function Cezanne() {
           <PackgaeSvg />
           Products
         </TitleHeading>
-        <SubHeading></SubHeading>
-        <Paragraph style={{ width: '500px', color: theme.palette.colors.secondary }}>
+        <SubHeading>Cezanne</SubHeading>
+        <Paragraph product style={{ width: '500px', color: theme.palette.colors.secondary }}>
           Transform your frizzy, difficult, kinky, curly hair into soft, manageable, beautiful
           locks.<span> Reduce your drying and styling time by client reported</span>
         </Paragraph>
         <Anchor
+          product
           style={{
             display: 'block',
             width: '150px',
@@ -39,7 +33,7 @@ export default function Cezanne() {
           }}>
           Check out more
         </Anchor>
-      </Section>
+      </ProductText>
       <img style={{ width: '50vw', borderRadius: '0 5em 0 5em' }} src="/images/cezanne.png" />
     </ProductsContainer>
   );

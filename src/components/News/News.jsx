@@ -63,17 +63,17 @@ const NewsCard = ({ title, text, src, date }) => {
         style={{
           color: theme.palette.colors.primary,
           fontSize: theme.font.medium,
-          padding: '.5em'
+          padding: ' .5em'
         }}>
         <img src="/icons/newspaper.svg" />
         News
       </TitleHeading>
-      <SubHeading style={{ padding: '.5em', color: theme.palette.colors.primary }}>
+      <SubHeading style={{ padding: ' .5em', color: theme.palette.colors.primary }}>
         {title}
       </SubHeading>
       <div
         style={{
-          padding: '.5em',
+          padding: ' .5em',
           width: '100%',
           display: 'flex',
           gap: '1em',
@@ -82,7 +82,7 @@ const NewsCard = ({ title, text, src, date }) => {
         <small>{date}</small>
         <div style={{ backgroundColor: 'black', height: '2px', width: '80%' }}></div>
       </div>
-      <Paragraph style={{ padding: '.5em' }}>{text}</Paragraph>
+      <Paragraph style={{ padding: ' .5em' }}>{text}</Paragraph>
       <Anchor style={{ display: 'block', padding: '.5em .5em 2em' }}>Read More </Anchor>
     </Card>
   );

@@ -1,28 +1,19 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 import { Anchor, Button, ButtonContainer } from '../common/Button';
-import { Section } from '../common/Section';
+// import { Section } from '../common/Section';
 import { TitleHeading, SubHeading, Paragraph, Headings } from '../common/SubHeading';
+import { BridalContainer } from './styled';
 
 export default function BridalServices() {
   const theme = useTheme();
   return (
-    <Section
-      style={{
-        backgroundImage: 'url(/images/bridalServices.png)',
-        backgroundPosition: 'center',
-        position: 'relative',
-        alignItems: 'flex-start',
-        width: '1100px',
-        height: '500px',
-        margin: '5em auto',
-        borderRadius: '0 10em 0 10em'
-      }}>
+    <BridalContainer>
       <Headings
         style={{
           position: 'absolute',
           right: '0px',
-          paddingBlock: '10em',
+          paddingBlock: '5em',
           paddingInline: '1em',
           width: '400px',
           backgroundColor: 'rgb(255,255,255,0.3)'
@@ -61,6 +52,6 @@ export default function BridalServices() {
           ↓ Check out more
         </Anchor>
       </Headings>
-    </Section>
+    </BridalContainer>
   );
 }

@@ -9,12 +9,12 @@ export default function Hero() {
   return (
     <HeroContent>
       <Headings>
-        <Flowers />
         <TitleHeading>A new type of salon.</TitleHeading>
         <Heading>A New Type Of Experience.</Heading>
         <ButtonContainer>
           <Button>Contact</Button>
         </ButtonContainer>
+        <Flowers />
         <HeroAction>
           <SocialHero>
             <Facebook />
